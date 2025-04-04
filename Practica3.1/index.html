@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 1 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Laboratorio de redes </h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Redes digitales de datos</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 3: Wifi ESP32 - Thingspeak
+
+                        </h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="img/jes.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <img class="img-fluid rounded-circle" width="50px" src="img/seb.jpeg" alt="..." />
+                                <div class="ms-2">
+                                <div class="fw-bold">Abundiz Carbajal Jesus Juventino, Santos Quevedo Sebastian 
+                                </div>
+                                <div class="text-muted">Ingenieria mecatronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Febrero 05, 2025</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >WOKWI</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/f.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" > Resumen </h2>
+                        <p class="fs-6 mb-4">En esta práctica se utilizaron sensores como el botón, el potenciómetro, el DHT22 y el PIR conectados al ESP32, y se configuró la plataforma ThingSpeak para visualizar gráficamente los datos recolectados. Aunque no se observó la transmisión en tiempo real, se lograron ver las gráficas correspondientes en la nube.</p>
+                        <p class="fs-6 mb-4">Se agregaran videos del WOKWI para mejor entendimiento de las conexciones</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" > Introducción </h2>
+                        <p class="fs-6 mb-4">ThingSpeak es una plataforma que permite visualizar y analizar datos de sensores conectados a dispositivos IoT como el ESP32. En esta práctica, se trabajó con sensores digitales y analógicos, y se configuró el entorno en Arduino IDE para generar gráficos en ThingSpeak. Aunque no se observó el envío en tiempo real, la visualización de los datos en la plataforma permitió comprender el funcionamiento básico del monitoreo en la nube.
+                          </p>
+                        <p class="fs-6 mb-4"></p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Lista de materiales </h2>  
+                        <!-- Table of Materials -->
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Material</th>
+                                <th scope="col">Cantidad</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                              <td>ESP32</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                               <td>Leds</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                              <td>Resistencia 220ohms</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                                  <td>Resistencia 1Kohms</td>
+                                      <td>1</td> 
+                                      <td></td> 
+                                    </tr>
+                                <tr>
+                              <td>Protoboard</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                              <td>Sensores: Potenciómetro, DHT22, PIR</td>
+                                <td>1</td> 
+                                <td></td> 
+                              </tr>
+                              <td>Cables</td>
+                                <td>n</td> 
+                                <td></td> 
+                              </tr>
+                             
+                            </tbody>
+                          </table>
+                        <p id="desarrollo">
+                        <h1 class="fw-bolder mb-4 mt-5 fs-5"> Desarrollo </h1>
+                       <h3 class="fw-bolder mb-4 mt-5 fs-5">    1. Desarrollar un programa donde cuando se apriete el boton se prenda el led y mande a la pagina. </h3class>
+                        <p></p>
+                        <p>Se ve donde se conectaran cada componente uno dirigido al led y lo demas donde va como se muestra en la siguiente imagen
+                        
+                          </p>
+                          
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                          <img src="img/c2.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                          <img src="" style="width: auto; height: 100%;" />
+                      </div>
+                      <p></p>
+                      <p>Se progama de la siguiente manera para que encienda
+                      
+                        </p>
+                          
+                          <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/codb1.png" style="width: auto; height: 600px;" />
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/codb2.png" style="width: auto; height: 550px;" />
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/codb3.png" style="width: auto; height: 350px;" />
+                        </div>
+                      <p>    2. Desarrollar un programa de apagado de un LED mediante un potenciómetro. </p>
+                      <p>Se progama de la siguiente manera para que se apague, cuando se mueva el potenciometro. 
+                      </p>
+                      <p></p> 
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pt.png" style="width: auto; height: 600px;" />
+                    </div>
+                    <p>Se programa de la siguiente manera</p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdp1.png" style="width: auto; height: 550px;" />
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdp2.png" style="width: auto; height: 350px;" />
+                    </div>
+                      <p>       3. Desarrollar un programa de encendido y apagado de un LED mediante el sensor de humedad.  </p>
+                      <p>Se arma de la siguiente manera
+                      </p>
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                          <img src="img/senh.png" style="width: auto; height: 500px;" />
+                      </div>
+                      <p>Se programa de la siguiente manera
+                    </p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdhu.png" style="width: auto; height: 500px;" />
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdhu2.png" style="width: auto; height: 500px;" />
+                    </div>
+                      <p>    4. Desarrollar un sistema de encendido y apagado de un LED el uso de un sensor PIR.  </p>
+                      <p>Se arma de la siguiente manera.
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/arpir.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p>Se progama de la siguiente manera 
+                    </p>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                          <img src="img/cdpir.png" style="width: auto; height: 500px;" />
+                      </div>
+                      
+                      
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <p class="fs-6 mb-4">Se mostraran una por una las simulaciones que se hicieron en WOKWI</p>
+                            <P>BOTON</P>
+                            <figure class="mb-4" align="center"><video width="90%"  controls>
+                                <source src="img/simb.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <P>POTENCIOMETRO</P>
+                            <figure class="mb-4" align="center"><video width="90%"  controls>
+                                <source src="img/simp.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <P>DHT22</P>
+                            <figure class="mb-4" align="center"><video width="90%"  controls>
+                                <source src="img/simh.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <P>PIR</P>
+                            <figure class="mb-4" align="center"><video width="90%"  controls>
+                                <source src="video/simpr.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">Los diseños como se mostraon fueron proporcionados por nuestro maestro Huber como se muestran fueron tres diseños diferentes uno sin botones, otro con un solo boton y el ultimo con dos botones</p>
+                            <p class="fs-6 mb-4"></p>
+
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Resultados </h2>
+                        <p class="fs-6 mb-4">Como resultados nos dio que utilizando el microcontrolador podemos encender de diferentes maneras un led mediante programacion que nos ayuda para comprender mejor esto</p>
+                        <p class="fs-6 mb-4">A continuacion las pruebas de nuestros armados igual en el orden que se fueron pidiendo</p>
+                        
+                        <P>BOTON</P>
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/graf1.png" style="width: auto; height:  400px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <P>POTENCIOMETRO</P>
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/graf2.png" style="width: auto; height: 400px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <P>DHT22</P>
+                        
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/graf3.png" style="width: auto; height: 400px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <P>PIR</P>
+                
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/graf4.png" style="width: auto; height: 400px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Conclusiones </h2>
+                        <p class="fs-6 mb-4">
+                            
+                            Al terminar esta práctica, aprendimos a integrar hardware y software en un proyecto de IoT de forma sencilla y práctica. Configurar el ESP32 y conectarlo con ThingSpeak nos ayudó a entender cómo se pueden monitorear datos a distancia y analizarlos en tiempo real. También trabajar con distintos sensores nos permitió ver lo versátil que puede ser el ESP32 en diferentes tipos de aplicaciones.
+                            
+                            
+                            ¿Quieres que suene todavía más relajado, tipo presentación oral, o así está bien para un informe escrito?</p>
+                        <p class="fs-6 mb-4"></p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
+                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
+                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

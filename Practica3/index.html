@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1 | Ibero Puebla</title>
+        <title>Práctica 4 | Ibero Puebla</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,13 +51,14 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Wifi ESP32 Entradas y Salidas Digitales 
-
+                        <h1 class="fw-bolder mb-1">Práctica 4: ESP32 y Thingspeak
                         </h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
-                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />
+                            <img class="img-fluid rounded-circle" width="50px" src="img/jes.jpeg" alt="..." />
                             <div class="ms-2">
+                                <img class="img-fluid rounded-circle" width="50px" src="img/seb.jpeg" alt="..." />
+                                <div class="ms-2">
                                 <div class="fw-bold">Abundiz Carbajal Jesus Juventino, Santos Quevedo Sebastian 
                                 </div>
                                 <div class="text-muted">Ingenieria mecatronica</div>
@@ -77,77 +78,79 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/thig.png" alt="..." /></figure>
                                 
                     <p id="resumen">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica aprenderás a usar las entradas y salidas digitales del ESP32, configurarás el IDE de Arduino para programar la placa y revisarás los pines disponibles para su uso, luego desarrollarás varios programas para controlar un LED, primero encendiéndolo y apagándolo con código, después haciendo que parpadee con retardos, luego aprenderás a controlarlo con un botón y después con dos botones usando condiciones lógicas OR y AND, esto ayudará a entender cómo funcionan los pines digitales y cómo interactuar con el entorno a través de sensores y botones.</p>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" > Resumen </h2>
+                        <p class="fs-6 mb-4">En esta práctica se conectó el ESP32 a ThingSpeak mediante Wi-Fi para enviar datos en tiempo real desde sensores como el botón, potenciómetro, DHT22 y PIR. Se configuró el entorno en Arduino IDE y se implementó la lectura y transmisión de datos, aplicando conceptos básicos de IoT y comunicación en la nube.</p>
                         <p class="fs-6 mb-4">Se agregaran videos del WOKWI para mejor entendimiento de las conexciones</p>
                         
                         <p id="intro">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">El ESP32 es un pequeño dispositivo que funciona como un cerebro para controlar diferentes cosas, como luces, motores o sensores. Es muy útil porque tiene Wi-Fi y Bluetooth, lo que permite conectarlo a internet o a otros dispositivos sin necesidad de cables.  
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" > Introducción </h2>
+                        <p class="fs-6 mb-4">En el contexto del Internet de las Cosas (IoT), la capacidad de recopilar, transmitir y analizar datos en tiempo real es clave para el desarrollo de soluciones inteligentes. El ESP32, gracias a su conectividad Wi-Fi, se presenta como una herramienta versátil para establecer comunicación entre sensores y plataformas en la nube. ThingSpeak es una de estas plataformas, destacada por su facilidad de uso para almacenar y visualizar datos de manera remota.
 
-                            Aprender a usar el ESP32 es importante porque nos permite crear proyectos de automatización, como encender y apagar luces, medir temperatura o incluso hacer dispositivos inteligentes. En esta práctica, conoceremos cómo funcionan sus pines digitales y aprenderemos a controlarlos con programación, lo que nos ayudará a entender mejor cómo hacer que un dispositivo responda a nuestras órdenes.</p>
+                            Esta práctica tiene como objetivo comprender el funcionamiento e integración entre el ESP32 y ThingSpeak. A través del uso de sensores digitales, analógicos e inteligentes como el botón, el potenciómetro, el DHT22 y el PIR, se llevará a cabo la lectura de datos y su transmisión en tiempo real. Mediante este proceso, se busca fortalecer los conocimientos prácticos sobre IoT, ofreciendo una base útil para la creación de sistemas automatizados y soluciones tecnológicas basadas en la nube.  
+
+                          </p>
                         <p class="fs-6 mb-4"></p>
                         
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >-Lista de materiales -</h2>  
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Lista de materiales </h2>  
                         <!-- Table of Materials -->
                         <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">Material</th>
-                              <th scope="col">Cantidad</th>
-                              
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                            <td>ESP32</td>
+                            <thead>
+                              <tr>
+                                <th scope="col">Material</th>
+                                <th scope="col">Cantidad</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                              <td>ESP32</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                               <td>Leds</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                              <td>Resistencia 220ohms</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                                <tr>
+                                  <td>Resistencia 1Kohms</td>
+                                      <td>1</td> 
+                                      <td></td> 
+                                    </tr>
+                                <tr>
+                              <td>Protoboard</td>
+                                  <td>1</td> 
+                                  <td></td> 
+                                </tr>
+                              <td>Sensores: Potenciómetro, DHT22, PIR</td>
                                 <td>1</td> 
                                 <td></td> 
                               </tr>
-                              <tr>
-                             <td>Leds</td>
-                                <td>1</td> 
+                              <td>Cables</td>
+                                <td>n</td> 
                                 <td></td> 
                               </tr>
-                              <tr>
-                            <td>Resistencia 220ohms</td>
-                                <td>1</td> 
-                                <td></td> 
-                              </tr>
-                              <tr>
-                                <td>Resistencia 1Kohms</td>
-                                    <td>1</td> 
-                                    <td></td> 
-                                  </tr>
-                              <tr>
-                            <td>Protoboard</td>
-                                <td>1</td> 
-                                <td></td> 
-                              </tr>
-                            <td>Botone</td>
-                              <td>2</td> 
-                              <td></td> 
-                            </tr>
-                            <td>Cables</td>
-                              <td>n</td> 
-                              <td></td> 
-                            </tr>
-                           
-                          </tbody>
-                        </table>
+                             
+                            </tbody>
+                          </table>
                         <p id="desarrollo">
-                        <h1 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h1>
-                       <h3 class="fw-bolder mb-4 mt-5 fs-5">    1. Desarrollar un programa de encendido de un LED mediante programación. </h3class>
+                        <h1 class="fw-bolder mb-4 mt-5 fs-5"> Desarrollo </h1>
+                       <h3 class="fw-bolder mb-4 mt-5 fs-5">    1. Desarrollar un programa donde cuando se apriete el boton se prenda el led y mande a la pagina. </h3class>
                         <p></p>
                         <p>Se ve donde se conectaran cada componente uno dirigido al led y lo demas donde va como se muestra en la siguiente imagen
                         
                           </p>
                           
                         <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/c1.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                          <img src="img/c2.png" style="width: auto; height: 100%; margin-right: 20px;" />
                           <img src="" style="width: auto; height: 100%;" />
                       </div>
                       <p></p>
@@ -156,70 +159,74 @@
                         </p>
                           
                           <div style="display: flex; justify-content: center; align-items: center;">
-                            <img src="img/cd1.png" style="width: auto; height: 500px;" />
+                            <img src="img/codb1.png" style="width: auto; height: 600px;" />
                         </div>
-                      <p>    2. Desarrollar un programa de apagado de un LED mediante programación. </p>
-                      <p>Se progama de la siguiente manera para que se apague, la conexcion es la misma que el encendido solo cambiara en la progamacion 
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/codb2.png" style="width: auto; height: 550px;" />
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/codb3.png" style="width: auto; height: 350px;" />
+                        </div>
+                      <p>    2. Desarrollar un programa de apagado de un LED mediante un potenciómetro. </p>
+                      <p>Se progama de la siguiente manera para que se apague, cuando se mueva el potenciometro. 
+                      </p>
+                      <p></p> 
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pt.png" style="width: auto; height: 600px;" />
+                    </div>
+                    <p>Se programa de la siguiente manera</p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdp1.png" style="width: auto; height: 550px;" />
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdp2.png" style="width: auto; height: 350px;" />
+                    </div>
+                      <p>       3. Desarrollar un programa de encendido y apagado de un LED mediante el sensor de humedad.  </p>
+                      <p>Se arma de la siguiente manera
                       </p>
                         
                         <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/cd2.png" style="width: auto; height: 500px;" />
+                          <img src="img/senh.png" style="width: auto; height: 500px;" />
                       </div>
-                      <p>       3. Desarrollar un programa de encendido y apagado de un LED mediante retardos.  </p>
-                      <p>Se progama de la siguiente manera para que parpadee, la conexcion es la misma que el encendido solo cambiara en la programacion. 
-                      </p>
-                        
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/cd3.png" style="width: auto; height: 500px;" />
-                      </div>
-                      <p>    4. Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.  </p>
-                      <p>Se progama de la siguiente manera para que prenda mediante boton, la conexcion es diferente donde se agregara un boton y una Resistencia de 1Kohms.
-                      </p>
+                      <p>Se programa de la siguiente manera
+                    </p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdhu.png" style="width: auto; height: 500px;" />
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/cdhu2.png" style="width: auto; height: 500px;" />
+                    </div>
+                      <p>    4. Desarrollar un sistema de encendido y apagado de un LED el uso de un sensor PIR.  </p>
+                      <p>Se arma de la siguiente manera.
                       <div style="display: flex; justify-content: center; align-items: center;">
-                        <img src="img/c2.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="img/arpir.png" style="width: auto; height: 100%; margin-right: 20px;" />
                         <img src="" style="width: auto; height: 100%;" />
                     </div>
+                    <p>Se progama de la siguiente manera 
+                    </p>
                         <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/cd4.png" style="width: auto; height: 500px;" />
+                          <img src="img/cdpir.png" style="width: auto; height: 500px;" />
                       </div>
-                      <p>    5.    Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.   </p>
-                      <p>Se progama de la siguiente manera para que prenda mediante boton, la conexcion es diferente donde se agregara un boton y una Resistencia de 1Kohms.
-                      </p>
-                      <div style="display: flex; justify-content: center; align-items: center;">
-                        <img src="img/c2.png" style="width: auto; height: 100%; margin-right: 20px;" />
-                        <img src="" style="width: auto; height: 100%;" />
-                    </div>
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/cd4.png" style="width: auto; height: 500px;" />
-                      </div>
-                      <p>    6.     Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.   </p>
-                      <p>Se progama de la siguiente manera para que prenda mediante boton, la conexcion es diferente donde se agregara un boton y una Resistencia de 1Kohms.
-                      </p>
-                      <div style="display: flex; justify-content: center; align-items: center;">
-                        <img src="img/c2.png" style="width: auto; height: 100%; margin-right: 20px;" />
-                        <img src="" style="width: auto; height: 100%;" />
-                    </div>
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                          <img src="img/cd4.png" style="width: auto; height: 500px;" />
-                      </div>
+                      
+                      
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
                             <p class="fs-6 mb-4">Se mostraran una por una las simulaciones que se hicieron en WOKWI</p>
-                            <P>ENCENDIDO DE LED</P>
+                            <P>BOTON</P>
                             <figure class="mb-4" align="center"><video width="90%"  controls>
-                                <source src="video/ENCENDERLED.mp4" type="video/mp4">
+                                <source src="img/simb.mp4" type="video/mp4">
                             </video></p></figure>
-                            <P>APAGADO DE LED</P>
+                            <P>POTENCIOMETRO</P>
                             <figure class="mb-4" align="center"><video width="90%"  controls>
-                                <source src="video/APAGADOLED.mp4" type="video/mp4">
+                                <source src="img/simp.mp4" type="video/mp4">
                             </video></p></figure>
-                            <P>PARPADEO DE LED</P>
+                            <P>DHT22</P>
                             <figure class="mb-4" align="center"><video width="90%"  controls>
-                                <source src="video/PARPADEO.mp4" type="video/mp4">
+                                <source src="img/simh.mp4" type="video/mp4">
                             </video></p></figure>
-                            <P>ENCENDIDO DE LED MEDIANTE BOTON</P>
+                            <P>PIR</P>
                             <figure class="mb-4" align="center"><video width="90%"  controls>
-                                <source src="video/BOTONENCENDER.mp4" type="video/mp4">
+                                <source src="video/simpr.mp4" type="video/mp4">
                             </video></p></figure>
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
@@ -233,29 +240,47 @@
                             
 
                         <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Resultados </h2>
                         <p class="fs-6 mb-4">Como resultados nos dio que utilizando el microcontrolador podemos encender de diferentes maneras un led mediante programacion que nos ayuda para comprender mejor esto</p>
                         <p class="fs-6 mb-4">A continuacion las pruebas de nuestros armados igual en el orden que se fueron pidiendo</p>
                         
-                        <P>ENCENDIDO DE LED</P>
+                        <P>BOTON</P>
                         <figure class="mb-4" align="center"><video width="90%"  controls>
-                            <source src="video/ENCENDERLED.mp4" type="video/mp4">
+                            <source src="video/resboton.mp4" type="video/mp4">
                         </video></p></figure>
-                        <P>APAGADO DE LED</P>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/grafb.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <P>POTENCIOMETRO</P>
                         <figure class="mb-4" align="center"><video width="90%"  controls>
-                            <source src="video/APAGADOLED.mp4" type="video/mp4">
+                            <source src="video/respot.mp4" type="video/mp4">
                         </video></p></figure>
-                        <P>PARPADEO DE LED</P>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/grafp.png" style="width: auto; height: 500px;" />
+                        </div>
+                        <P>DHT22</P>
                         <figure class="mb-4" align="center"><video width="90%"  controls>
-                            <source src="video/PARPADEO.mp4" type="video/mp4">
+                            <source src="video/reshu.mp4" type="video/mp4">
                         </video></p></figure>
-                        <P>ENCENDIDO DE LED MEDIANTE BOTON</P>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/grafhu.png" style="width: auto; height: 500px;" />
+                        </div>
+                        <P>PIR</P>
                         <figure class="mb-4" align="center"><video width="90%"  controls>
-                            <source src="video/BOTONENCENDER.mp4" type="video/mp4">
+                            <source src="video/pir.mp4" type="video/mp4">
                         </video></p></figure>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/grafpir.png" style="width: auto; height: 500px;" />
+                        </div>
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5"> Conclusiones </h2>
-                        <p class="fs-6 mb-4">El entender de que compuertas ocupar es importante para que el trabajo de ejecute de manera perfecta, en esta se entiende lo basico, pero fundemental de lo que se trabajara y como se trabajar para un mayor entendimiento de como es que se puede trabajar con un microcontrolador.</p>
+                        <p class="fs-6 mb-4">
+                            
+                            Al terminar esta práctica, aprendimos a integrar hardware y software en un proyecto de IoT de forma sencilla y práctica. Configurar el ESP32 y conectarlo con ThingSpeak nos ayudó a entender cómo se pueden monitorear datos a distancia y analizarlos en tiempo real. También trabajar con distintos sensores nos permitió ver lo versátil que puede ser el ESP32 en diferentes tipos de aplicaciones.
+                            
+                            
+                            ¿Quieres que suene todavía más relajado, tipo presentación oral, o así está bien para un informe escrito?</p>
                         <p class="fs-6 mb-4"></p>
                         
 
