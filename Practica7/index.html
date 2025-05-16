@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Practica 7 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Laboratorio de redes </h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Redes digitales de datos</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Practica 7: Redes de computadora con Switches y Cables
+
+                        </h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <div class="ms-2">
+                                <img class="rounded-circle" width="50px" src="img/jes.jpeg" alt="..." />
+                                <img class="rounded-circle" width="50px" src="img/seb.jpeg" alt="..." />
+                            </div> 
+                            <div class="ms-2">   
+                                <div class="fw-bold">Abundiz Carbajal Jesus Juventino, Santos Quevedo Sebastian 
+                                </div>
+                                <div class="text-muted">Ingenieria mecatronica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo 15, 2025</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >WOKWI</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Web.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Resumen</h2>
+                        <p class="fs-6 mb-4">En esta práctica se diseñaron e implementaron diferentes configuraciones de red utilizando tres computadoras, un switch y un router. Se estableció una red alámbrica mediante el uso del switch, una red inalámbrica a través del router y una red combinada que integraba ambos métodos de conexión. Para la conexión alámbrica se emplearon cables Ethernet, y se verificó la conectividad entre los dispositivos realizando pruebas de comunicación mediante el comando ping, utilizando las direcciones IP asignadas automáticamente, obtenidas con el comando ipconfig en la terminal.
+
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Introducción</h2>
+                        <p class="fs-6 mb-4">Las redes de computadoras en entornos locales (LAN) permiten la interconexión de múltiples dispositivos para compartir recursos, servicios e información de forma eficiente. Comprender el funcionamiento y la configuración básica de dispositivos como switches y routers es esencial para el diseño y mantenimiento de redes pequeñas y medianas. Esta práctica permite al estudiante explorar la creación de redes alámbricas, inalámbricas y mixtas, así como aplicar comandos básicos de diagnóstico de red para validar la conectividad.
+
+         </p>
+                        <p class="fs-6 mb-4"></p>
+                        
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >Lista de materiales </h2>  
+                        <!-- Table of Materials -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Material</th>
+                                  <th scope="col">Cantidad</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                <td>Cable UTP categoría 5e (Cat 5e)</td>
+                                    <td>6 m</td> 
+                                    <td></td> 
+                                  </tr>
+                                  <tr>
+                                 <td>Computadora o laptop administradora</td>
+                                    <td>1</td> 
+                                    <td></td> 
+                                  </tr>
+                                  <tr>
+                                <td>Computadoras o laptops diferentes</td>
+                                    <td>4</td> 
+                                    <td></td> 
+                                  </tr>
+                                  <tr>
+                                    <td>XAMPP</td>
+                                        <td>1</td> 
+                                        <td></td> 
+                                      </tr>
+                                  <tr>
+                                    <td>dispositivo</td>
+                                    <td>2</td> 
+                                    <td></td> 
+                                  </tr>
+                            
+                        </table>
+                        <section id="desarrollo">
+                            <h1 class="fw-bolder mb-4 mt-5 fs-5">Desarrollo</h1>
+                            <p>En esta práctica se implementaron tres tipos de configuraciones de red utilizando un switch, un router y tres computadoras. Se exploraron redes alámbricas, inalámbricas y combinadas, para entender el comportamiento y funciones de cada dispositivo dentro de una red local.</p>
+                          
+                            <h2 class="fw-bold fs-6 mt-4">1. Funcionamiento del switch y del router</h2>
+                            <ul class="fs-6">
+                              <li><strong>Switch:</strong> Es un dispositivo que opera en la capa 2 del modelo OSI (enlace de datos) y se encarga de conectar múltiples dispositivos dentro de una red local, reenviando los datos al destino correcto según la dirección MAC.</li>
+                              <li><strong>Router:</strong> Opera en la capa 3 del modelo OSI (red) y conecta diferentes redes entre sí. Además, se encarga de asignar direcciones IP a los dispositivos mediante DHCP y dirigir el tráfico de red entre subredes o hacia Internet.</li>
+                            </ul>
+                          
+                            <h2 class="fw-bold fs-6 mt-4">2. Diseño de red con switch</h2>
+                            <ol class="fs-6">
+                              <li>Se utilizaron <strong>cables de red directos</strong> para las conexiones entre el switch y las computadoras.</li>
+                              <li>El switch se conectó a tres computadoras, una de las cuales funcionó como <strong>servidor local</strong>.</li>
+                              <li>Se activó la <strong>asignación automática de IP</strong> mediante DHCP para cada dispositivo.</li>
+                              <li>Se verificó la conectividad ejecutando el comando <code>ping</code> entre las computadoras y comprobando el acceso al sitio web alojado en el servidor.</li>
+                            </ol>
+                          
+                            <h2 class="fw-bold fs-6 mt-4">3. Diseño de red con router</h2>
+                            <ol class="fs-6">
+                              <li>Se utilizó un <strong>router con capacidad para conexiones alámbricas e inalámbricas</strong>.</li>
+                              <li>Se conectaron al menos tres computadoras al router, incluyendo una como servidor.</li>
+                              <li>Se configuró el router para asignar direcciones IP de forma automática (DHCP).</li>
+                              <li>Se realizaron pruebas de comunicación mediante <code>ping</code> y se verificó el acceso al servidor desde las demás computadoras.</li>
+                            </ol>
+                          
+                            <h2 class="fw-bold fs-6 mt-4">4. Unión de ambas redes</h2>
+                            <ol class="fs-6">
+                              <li>Se integraron ambas redes (switch y router) utilizando los <strong>cables adecuados</strong>, según la topología (en algunos casos puede requerirse cable cruzado).</li>
+                              <li>Se mantuvo la <strong>asignación automática de IP</strong> para todos los dispositivos conectados.</li>
+                              <li>Se comprobó la conectividad global mediante comandos <code>ping</code> y pruebas de intercambio de archivos entre computadoras pertenecientes a ambas redes.</li>
+                            </ol>
+                          </section>
+                          
+                          
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                          <img src="img/co.jpg" style="width: auto; height: 100%; margin-right: 20px;" />
+                          <img src="" style="width: auto; height: 100%;" />
+                      </div>
+                      <p></p>
+                      <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi2.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi3.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi4.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi5.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi6.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi7.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi8.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="img/pi9.png" style="width: auto; height: 100%; margin-right: 20px;" />
+                        <img src="" style="width: auto; height: 100%;" />
+                    </div>
+                    <p></p>
+                      <p>Pagina
+                      
+                        </p>
+                          
+                          <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/pag.png" style="width: auto; height: 500px;" />
+                        </div>
+                    
+                     
+                        
+                           
+                            <p id="diseño">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
+                            <p class="fs-6 mb-4">Se diseño una caja para el ESP32 con el Buzzer y el led para que se resguarde por seguridad.</p>
+                            
+                           
+
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Se logro hacer que se armen de manera precisa</p>
+                        <p class="fs-6 mb-4">A continuacion las pruebas de nuestros armado.</p>
+                        <P>Como se ve fisicamente</P>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/res.jpg" style="width: auto; height: 100%; margin-right: 20px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <p></p>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <img src="img/res2.jpg" style="width: auto; height: 100%; margin-right: 20px;" />
+                            <img src="" style="width: auto; height: 100%;" />
+                        </div>
+                        <p></p>
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5"> Conclusiones </h2>
+                        <p class="fs-6 mb-4">Comprensión integral de los dispositivos de interconexión:
+                            La práctica permitió distinguir claramente el funcionamiento del switch y del router, destacando que, aunque operan en capas distintas del modelo OSI (capa 2 y capa 3, respectivamente), ambos son dispositivos esenciales y complementarios dentro de una red. El switch facilita la segmentación eficiente del tráfico a nivel de direcciones MAC, mientras que el router gestiona el tráfico entre diferentes redes y administra los rangos de direcciones IP. Su correcta configuración evidenció el papel específico que cada uno cumple en la conectividad de red.
+                            
+                            Importancia de la planificación física y lógica:
+                            Seleccionar adecuadamente el tipo de cable (directo o cruzado) y diseñar una topología coherente fueron factores clave para garantizar la conectividad estable entre dispositivos. El uso de cables directos entre hosts y switch, y cruzados para conexiones específicas entre switch y router, demostró la importancia de una planificación precisa tanto del cableado físico como del direccionamiento IP lógico.
+                            
+                            DHCP como facilitador de escalabilidad y gestión:
+                            La asignación automática de IP mediante DHCP simplificó la integración de nuevos dispositivos y redujo errores de configuración. Se evidenció que DHCP es una herramienta fundamental para redes dinámicas o en expansión, permitiendo un crecimiento ordenado y eficiente sin la necesidad de gestionar direcciones manualmente.
+                            
+                            Verificación y diagnóstico con herramientas básicas:
+                            El uso del comando ping y la comprobación del acceso al sitio web del servidor permitieron validar de manera práctica cada etapa de la configuración. Estas pruebas básicas resultaron efectivas para detectar errores de conexión, problemas de cableado o conflictos de IP, demostrando que dominar herramientas sencillas de diagnóstico es fundamental antes de recurrir a soluciones más complejas.
+                            
+                            Interoperabilidad y transferencia de datos entre subredes:
+                            La integración de ambas redes —la alámbrica administrada por el switch y la inalámbrica gestionada por el router— mostró que es posible lograr una infraestructura unificada siempre que se mantenga coherencia en los parámetros de red como el rango de IP, la máscara de subred y la puerta de enlace. Esto refuerza la importancia de diseñar redes modulares con capacidad de escalamiento e integración.
+                            
+                            Refuerzo de las buenas prácticas de documentación:
+                            Documentar topologías, configuraciones, rangos de IP y resultados de pruebas facilitó la detección y resolución de problemas, así como la comprensión del diseño por parte de terceros. Se concluye que la documentación es una herramienta técnica fundamental, no solo para mantenimiento y solución de problemas, sino también para futuras ampliaciones o auditorías de red.</p>
+                        <p class="fs-6 mb-4"></p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
+                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
+                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Concurso.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL de la Caja: <a href="files/caja.STL">pieza.stl</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL de la Tapa: <a href="files/tapa.STL">pieza.stl</a> </p>
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
